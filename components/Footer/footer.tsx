@@ -14,7 +14,9 @@ const Footer = () => {
     >
       <div className="flex justify-center lg:justify-between items-center h-full w-[70%] m-auto">
         <div className="flex">
-          <h1 className="text-iron">developed with lots of love and coffee</h1>
+          <h1 className="text-sm md:text-base text-iron">
+            developed with lots of love and coffee
+          </h1>
         </div>
         <div className="hidden lg:flex">
           <ul className="flex gap-4 text-lg">
