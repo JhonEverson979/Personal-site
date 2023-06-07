@@ -3,7 +3,7 @@ import { addDoc, collection, getDoc, getDocs } from "firebase/firestore";
 import { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { db } from "../config/firebase";
-const page = () => {
+const Page = () => {
   interface CreateFormData {
     name: string;
     email: String;
@@ -119,4 +119,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
