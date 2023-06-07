@@ -49,6 +49,9 @@ const Page = () => {
     errForm();
   }, [errors]);
 
+  useEffect(() => {
+    cleanTexts();
+  }, []);
   return (
     <main className="w-full my-24 text-white">
       <div className="h-full flex justify-center items-center">
@@ -60,7 +63,6 @@ const Page = () => {
             <form
               method="POST"
               action="https://formsubmit.co/jhoneverson979@gmail.com"
-              onSubmit={cleanTexts}
               // onSubmit={handleSubmit(onCreateMessage)}
             >
               <div className=" space-y-3">
