@@ -2,6 +2,7 @@ import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+
 import Link from "next/link";
 
 const Footer = () => {
@@ -17,14 +18,14 @@ const Footer = () => {
         </div>
         <div className="hidden lg:flex">
           <ul className="flex gap-4 text-lg">
-            {/* <li className="scale-100 hover:scale-110">
+            <li className="scale-100 hover:scale-110">
               <Link
                 target="_blank"
-                href="https://www.linkedin.com/in/jhon-everson-07a668276/"
+                href="https://www.linkedin.com/in/jhon-everson-30409725b/"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
               </Link>
-            </li> */}
+            </li>
             <li className="scale-100 hover:scale-110">
               <Link target="_blank" href="https://github.com/JhonEverson979">
                 <FontAwesomeIcon icon={faGithubSquare} className="w-6 h-6" />

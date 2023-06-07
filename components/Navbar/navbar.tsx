@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed w-full h-14 bg-slate-950 backdrop-filter backdrop-blur-sm text-white"
+      className="w-full h-14 bg-slate-950 backdrop-filter backdrop-blur-sm text-white"
       role="navigation"
       aria-label="Main navigation"
     >
@@ -44,25 +44,32 @@ const Navbar = () => {
         <div className="hidden lg:flex">
           <ul className="flex gap-5 ">
             <li
-              className={`scale-100 hover:scale-110 text-md text-iron ${
+              className={`scale-100 hover:scale-110 text-iron ${
                 pathname === "/" ? "border-b scale-110" : "border-none"
               }`}
             >
-              <Link href="/">Home</Link>
+              <Link href="/">HOME</Link>
             </li>
             <li
-              className={`scale-100 hover:scale-110 text-md text-iron ${
+              className={`scale-100 hover:scale-110 text-iron ${
                 pathname === "/portfolio" ? "border-b scale-110" : "border-none"
               }`}
             >
-              <Link href="/portfolio">Portfolio</Link>
+              <Link href="/portfolio">PORTFOLIO</Link>
             </li>
             <li
-              className={`scale-100 hover:scale-110 text-md text-iron ${
+              className={`scale-100 hover:scale-110 text-iron ${
                 pathname === "/aboutme" ? "border-b scale-110" : "border-none"
               }`}
             >
-              <Link href="/aboutme">About me</Link>
+              <Link href="/aboutme">ABOUT-ME</Link>
+            </li>
+            <li
+              className={`scale-100 hover:scale-110 text-iron ${
+                pathname === "/contact" ? "border-b scale-110" : "border-none"
+              }`}
+            >
+              <Link href="/contact">CONTACT</Link>
             </li>
           </ul>
         </div>
@@ -75,81 +82,99 @@ const Navbar = () => {
           </button>
           <div
             className={`${
-              hidden ? "h-96" : "h-0"
-            } bg-slate-950 mt-2 backdrop-filter backdrop-blur-sm fixed ml-auto mr-12 left-0 right-0 w-[50%] sm:w-[30%] z-10 transition-height duration-500 ease-in-out overflow-hidden`}
+              hidden ? "h-56" : "h-0"
+            } bg-slate-950 mt-2 backdrop-filter backdrop-blur-sm absolute m-auto left-0 right-0 w-[100%] z-10 transition-height duration-500 ease-in-out overflow-hidden`}
           >
-            <div className="flex flex-col mt-4 gap-4">
-              <h2 className="">Navigation:</h2>
-              <ul className=" space-y-3" role="list">
-                <li
-                  className={`scale-100 hover:scale-110 pl-2 text-md w-[40%]  ${
-                    pathname === "/" ? "border-b scale-110" : "border-none"
-                  }`}
-                >
-                  <Link href="/" aria-label="Go to About me section">
-                    Home
-                  </Link>
-                </li>
-                <li
-                  className={`scale-100 hover:scale-110 pl-2 text-md w-[40%]  ${
-                    pathname === "/portfolio"
-                      ? "border-b scale-110"
-                      : "border-none"
-                  }`}
-                >
-                  <Link href="/portfolio" aria-label="Go to Projects section">
-                    Portfolio
-                  </Link>
-                </li>
-                <li
-                  className={`scale-100 hover:scale-110 pl-2 text-md w-[40%]  ${
-                    pathname === "/aboutme"
-                      ? "border-b scale-110"
-                      : "border-none"
-                  }`}
-                >
-                  <Link href="/aboutme" aria-label="Go to Technologies section">
-                    About me
-                  </Link>
-                </li>
-              </ul>
-
-              <ul className="flex flex-col gap-4 text-lg" role="list">
-                <h2>Contacts: </h2>
-                {/* <li className="hover:bg-slate-900 pl-2">
-                  <Link
-                    target="_blank"
-                    href="https://www.linkedin.com/in/jhon-everson-07a668276/"
-                    aria-label="Visit my Linkedin profile"
-                    rel="noopener noreferrer"
+            <div className="flex justify-center mt-4 gap-16">
+              <div className="sm:w-[20%] w-[30%]">
+                <ul className="flex flex-col gap-2 text-lg " role="list">
+                  <h2 className=" text-center">Navigation:</h2>
+                  <li
+                    className={`scale-100 hover:scale-110 pl-2 text-center  ${
+                      pathname === "/" ? "border-b scale-110" : "border-none"
+                    }`}
                   >
-                    <FontAwesomeIcon className="mr-2" icon={faLinkedin} />
-                    Linkedin
-                  </Link>
-                </li> */}
-                <li className="hover:bg-slate-900 pl-2">
-                  <Link
-                    target="_blank"
-                    href="https://github.com/JhonEverson979"
-                    aria-label="Visit my GitHub profile"
-                    rel="noopener noreferrer"
+                    <Link href="/" aria-label="Go to About me section">
+                      Home
+                    </Link>
+                  </li>
+                  <li
+                    className={`scale-100 hover:scale-110 pl-2 text-center ${
+                      pathname === "/portfolio"
+                        ? "border-b scale-110"
+                        : "border-none"
+                    }`}
                   >
-                    <FontAwesomeIcon className="mr-2" icon={faGithubSquare} />
-                    GitHub
-                  </Link>
-                </li>
-                <li className="hover:bg-slate-900 pl-2">
-                  <Link
-                    target="_blank"
-                    href="mailto:jhoneverson979@gmail.com"
-                    aria-label="Send me an email"
-                    rel="noopener noreferrer"
+                    <Link href="/portfolio" aria-label="Go to Projects section">
+                      Portfolio
+                    </Link>
+                  </li>
+                  <li
+                    className={`scale-100 hover:scale-110 pl-2 text-center ${
+                      pathname === "/aboutme"
+                        ? "border-b scale-110"
+                        : "border-none"
+                    }`}
                   >
-                    <FontAwesomeIcon className="mr-2" icon={faEnvelopeSquare} />
-                    Email
-                  </Link>
-                </li>
-              </ul>
+                    <Link
+                      href="/aboutme"
+                      aria-label="Go to Technologies section"
+                    >
+                      About me
+                    </Link>
+                  </li>
+                  <li
+                    className={`scale-100 hover:scale-110 pl-2 text-center ${
+                      pathname === "/contact"
+                        ? "border-b scale-110"
+                        : "border-none"
+                    }`}
+                  >
+                    <Link href="/contact">Contact</Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="sm:w-[20%] w-[30%]">
+                <ul className="flex flex-col gap-4 text-lg" role="list">
+                  <h2>Contacts: </h2>
+                  <li className="hover:bg-slate-900">
+                    <Link
+                      target="_blank"
+                      href="https://www.linkedin.com/in/jhon-everson-30409725b/"
+                      aria-label="Visit my Linkedin profile"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon className="mr-2" icon={faLinkedin} />
+                      Linkedin
+                    </Link>
+                  </li>
+                  <li className="hover:bg-slate-900">
+                    <Link
+                      target="_blank"
+                      href="https://github.com/JhonEverson979"
+                      aria-label="Visit my GitHub profile"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon className="mr-2" icon={faGithubSquare} />
+                      GitHub
+                    </Link>
+                  </li>
+                  <li className="hover:bg-slate-900">
+                    <Link
+                      target="_blank"
+                      href="mailto:jhoneverson979@gmail.com"
+                      aria-label="Send me an email"
+                      rel="noopener noreferrer"
+                    >
+                      <FontAwesomeIcon
+                        className="mr-2"
+                        icon={faEnvelopeSquare}
+                      />
+                      Email
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

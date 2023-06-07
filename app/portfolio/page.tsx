@@ -10,7 +10,9 @@ const Portfolio = () => {
   return (
     <div className="h-full w-[70%] m-auto text-white ">
       <div className=" space-y-5">
-        <div className=" h-16"></div>
+        <div className=" h-full mt-16 mb-10 flex justify-center items-center">
+          <h1 className=" text-4xl">PORTFOLIO</h1>
+        </div>
 
         <div className="w-full h-full gap-16 rounded-md border-2 border-indigo-900">
           <div className="text-center pt-3">

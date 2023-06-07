@@ -4,8 +4,7 @@ import mePick from "../../public/images/mePick/mePick.jpeg";
 
 const AboutMe = () => {
   return (
-    <div className="w-full h-full text-white">
-      <div className=" h-32"></div>
+    <div className="w-full h-[80vh] flex justify-center items-center text-white">
       <div className=" w-[70%] m-auto flex flex-col-reverse md:flex-row md:gap- sm:justify-between sm:items-center">
         <div className=" md:max-w-[70%] lg:max-w-[50%] space-y-1 lg:space-y-3">
           <div className="w-full rounded-xl ">
