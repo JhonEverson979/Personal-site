@@ -71,6 +71,7 @@ const Page = () => {
                   <input
                     ref={refName}
                     name="name"
+                    required
                     // {...register("name", { required: true })}
                     className="w-full rounded-md px-2 bg-white/10 border border-white text-white"
                     placeholder="First & Last"
@@ -83,6 +84,7 @@ const Page = () => {
                   <input
                     ref={refEmail}
                     name="email"
+                    required
                     className="w-full rounded-md px-2 bg-white/10 border border-white text-white"
                     placeholder="example@gmail.com"
                     type="email"
@@ -95,6 +97,7 @@ const Page = () => {
                   <textarea
                     ref={refMessage}
                     name="message"
+                    required
                     // {...register("message", { required: true })}
                     className="w-full h-32 rounded-md px-2 text-white bg-white/10 border border-white"
                   ></textarea>

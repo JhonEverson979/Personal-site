@@ -14,7 +14,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [saber, setSaber] = useState(true); //mudei
+  const [saber, setSaber] = useState(false); //mudei
 
   useEffect(() => {
     setTimeout(() => {
