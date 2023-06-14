@@ -21,7 +21,9 @@ const Portfolio = () => {
           <div className=" lg:flex w-full h-full p-3 lg:w-[100%] lg:h-[90%] lg:gap-3">
             <div>
               <Image
-                className="w-full border-indigo-900 border-2"
+                className="border-indigo-900 border-2"
+                width={1400}
+                height={1400}
                 priority
                 src={socialMediaPick}
                 alt=""
@@ -98,7 +100,9 @@ const Portfolio = () => {
           <div className=" lg:flex w-full lg:w-[100%] lg:gap-3 lg:h-[90%] h-[100%] p-3 ">
             <div>
               <Image
-                className="w-full border-indigo-900 border-2"
+                width={1400}
+                height={1400}
+                className=" border-indigo-900 border-2"
                 priority
                 src={PromptopiaPick}
                 alt=""
@@ -175,7 +179,10 @@ const Portfolio = () => {
           <div className=" lg:flex w-full lg:w-[100%] lg:gap-3 lg:h-[90%] h-[100%] p-3 ">
             <div>
               <Image
-                className="w-full border-indigo-900 border-2"
+                width={1400}
+                height={1400}
+                className=" border-indigo-900 border-2"
+                priority
                 src={cartPick}
                 alt=""
               />
@@ -253,7 +260,10 @@ const Portfolio = () => {
           <div className=" lg:flex w-full lg:w-[100%] lg:gap-3 lg:h-[90%] h-[100%] p-3 ">
             <div>
               <Image
-                className="w-full border-indigo-900 border-2"
+                width={1400}
+                height={1400}
+                className=" border-indigo-900 border-2"
+                priority
                 src={memoryPick}
                 alt=""
               />
@@ -337,7 +347,10 @@ const Portfolio = () => {
           <div className=" lg:flex w-full lg:w-[100%] lg:gap-3 lg:h-[90%] h-[100%] p-3 ">
             <div>
               <Image
-                className="w-full border-indigo-900 border-2"
+                width={1400}
+                height={1400}
+                className=" border-indigo-900 border-2"
+                priority
                 src={studentPick}
                 alt=""
               />
