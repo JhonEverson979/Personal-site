@@ -52,6 +52,11 @@ const Page = () => {
   useEffect(() => {
     cleanTexts();
   }, []);
+
+  const [isLoading, setIsLoading] = useState(false);
+  const loading = () => {
+    setIsLoading(true);
+  };
   return (
     <main className="w-full my-24 text-white">
       <div className="h-full flex justify-center items-center">
@@ -63,6 +68,7 @@ const Page = () => {
             <form
               method="POST"
               action="https://formsubmit.co/jhoneverson979@gmail.com"
+              onSubmit={loading}
               // onSubmit={handleSubmit(onCreateMessage)}
             >
               <div className=" space-y-3">
@@ -112,7 +118,7 @@ const Page = () => {
                     type="submit"
                     className="bg-white/10 border hover:bg-white/75 hover:border-purple-400 transition-all ease-in-out border-white h-8 w-28 rounded-lg cursor-pointer"
                   >
-                    Submit
+                    {isLoading ? "Submit..." : "Submit"}
                   </button>
                 </div>
               </div>
