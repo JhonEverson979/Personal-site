@@ -102,7 +102,7 @@ const Portfolio = () => {
               <Image
                 width={1400}
                 height={1400}
-                className=" border-indigo-900 border-2"
+                className="w-full border-indigo-900 border-2"
                 priority
                 src={PromptopiaPick}
                 alt=""
@@ -181,7 +181,7 @@ const Portfolio = () => {
               <Image
                 width={1400}
                 height={1400}
-                className=" border-indigo-900 border-2"
+                className="w-full border-indigo-900 border-2"
                 priority
                 src={cartPick}
                 alt=""
@@ -262,7 +262,7 @@ const Portfolio = () => {
               <Image
                 width={1400}
                 height={1400}
-                className=" border-indigo-900 border-2"
+                className="w-full border-indigo-900 border-2"
                 priority
                 src={memoryPick}
                 alt=""
@@ -349,7 +349,7 @@ const Portfolio = () => {
               <Image
                 width={1400}
                 height={1400}
-                className=" border-indigo-900 border-2"
+                className="w-full border-indigo-900 border-2"
                 priority
                 src={studentPick}
                 alt=""

@@ -24,7 +24,6 @@ export default function RootLayout({
 
   return (
     <html className="bg-hero-pattern  font-serif" lang="en">
-      <meta name="description" content="jhon everson personal site" />;
       <title>jhon everson</title>
       <body>
         {saber ? (
