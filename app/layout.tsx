@@ -22,14 +22,10 @@ export default function RootLayout({
     }, 1400);
   }, []);
 
-  <meta name="description" content="jhon everson personal site" />;
-
   return (
-    <html
-      title="Jhon Everson"
-      className="bg-hero-pattern  font-serif"
-      lang="en"
-    >
+    <html className="bg-hero-pattern  font-serif" lang="en">
+      <meta name="description" content="jhon everson personal site" />;
+      <title>jhon everson</title>
       <body>
         {saber ? (
           <StartPage />

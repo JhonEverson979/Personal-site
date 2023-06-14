@@ -49,6 +49,7 @@ const AboutMe = () => {
         <div className="mx-auto pb-16">
           <Image
             className="h-48 w-48 lg:h-48 lg:w-48 md:h-40 md:w-40 rounded-full bg-white border-indigo-900 border-2 z-10 "
+            priority
             src={mePick}
             alt=""
           />

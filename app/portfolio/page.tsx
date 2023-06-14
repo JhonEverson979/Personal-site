@@ -22,6 +22,7 @@ const Portfolio = () => {
             <div>
               <Image
                 className="w-full border-indigo-900 border-2"
+                priority
                 src={socialMediaPick}
                 alt=""
               />
@@ -98,6 +99,7 @@ const Portfolio = () => {
             <div>
               <Image
                 className="w-full border-indigo-900 border-2"
+                priority
                 src={PromptopiaPick}
                 alt=""
               />
