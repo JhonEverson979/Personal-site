@@ -1,7 +1,11 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelopeSquare, faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelopeSquare,
+  faBars,
+  faXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -32,7 +36,6 @@ const Navbar = () => {
   return (
     <nav
       className="w-full h-14 bg-slate-950 backdrop-filter backdrop-blur-sm text-white"
-      role="navigation"
       aria-label="Main navigation"
     >
       <div className="flex justify-between items-center h-full w-[70%] m-auto">
@@ -41,44 +44,41 @@ const Navbar = () => {
             <Link href="/">Jhon Everson</Link>
           </h1>
         </div>
+
         <div className="hidden lg:flex">
-          <ul className="flex gap-5 ">
-            <li
-              className={`scale-100 hover:scale-110 text-iron ${
-                pathname === "/" ? "border-b scale-110" : "border-none"
-              }`}
-            >
-              <Link href="/">HOME</Link>
-            </li>
-            <li
-              className={`scale-100 hover:scale-110 text-iron ${
-                pathname === "/portfolio" ? "border-b scale-110" : "border-none"
-              }`}
-            >
-              <Link href="/portfolio">PORTFOLIO</Link>
-            </li>
-            <li
-              className={`scale-100 hover:scale-110 text-iron ${
-                pathname === "/aboutme" ? "border-b scale-110" : "border-none"
-              }`}
-            >
-              <Link href="/aboutme">ABOUT-ME</Link>
-            </li>
-            <li
-              className={`scale-100 hover:scale-110 text-iron ${
-                pathname === "/contact" ? "border-b scale-110" : "border-none"
-              }`}
-            >
-              <Link href="/contact">CONTACT</Link>
-            </li>
+          <ul className="flex gap-5">
+            {[
+              { name: "HOME", path: "/" },
+              { name: "PORTFOLIO", path: "/portfolio" },
+              { name: "ABOUT-ME", path: "/aboutme" },
+              { name: "CONTACT", path: "/contact" },
+            ].map((link) => (
+              <li
+                key={link.name}
+                className="scale-100 group-hover:scale-110 text-iron"
+              >
+                <Link
+                  href={link.path}
+                  className={pathname === link.path ? "border-b" : ""}
+                >
+                  {link.name}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
+
         <div ref={topbarRef} className="lg:hidden">
           <button
+            name="nav button"
             onClick={handleClick}
             className="scale-100 hover:scale-110 text-xl"
           >
-            <FontAwesomeIcon icon={faBars} />
+            {hidden ? (
+              <FontAwesomeIcon icon={faXmark} />
+            ) : (
+              <FontAwesomeIcon icon={faBars} />
+            )}
           </button>
           <div
             className={`${
@@ -87,8 +87,8 @@ const Navbar = () => {
           >
             <div className="flex justify-center mt-4 gap-16">
               <div className="sm:w-[20%] w-[30%]">
-                <ul className="flex flex-col gap-2 text-lg " role="list">
-                  <h2 className=" text-center">Navigation:</h2>
+                <h2 className=" text-lg text-center">Navigation:</h2>
+                <ul className="flex flex-col gap-2 text-lg ">
                   <li
                     className={`scale-100 hover:scale-110 pl-2 text-center  ${
                       pathname === "/" ? "border-b scale-110" : "border-none"
@@ -135,8 +135,8 @@ const Navbar = () => {
                 </ul>
               </div>
               <div className="sm:w-[20%] w-[30%]">
-                <ul className="flex flex-col gap-4 text-lg" role="list">
-                  <h2>Contacts: </h2>
+                <ul className="flex flex-col gap-4 text-lg">
+                  <h2 className=" text-lg">Contacts: </h2>
                   <li className="hover:bg-slate-900">
                     <Link
                       target="_blank"

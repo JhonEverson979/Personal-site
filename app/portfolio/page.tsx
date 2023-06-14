@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import socialMediaPick from "../../public/images/projectPicks/socialproject2.png";
-import cartPick from "../../public/images/projectPicks/redux-cart.png";
-import memoryPick from "../../public/images/projectPicks/memory-game-photo.png";
-import studentPick from "../../public/images/projectPicks/students-grade-photo.png";
-import PromptopiaPick from "../../public/images/projectPicks/promptopia.png";
+import socialMediaPick from "../../public/images/projectPicks/socialproject2.webp";
+import cartPick from "../../public/images/projectPicks/redux-cart.webp";
+import memoryPick from "../../public/images/projectPicks/memory-game-photo.webp";
+import studentPick from "../../public/images/projectPicks/students-grade-photo.webp";
+import PromptopiaPick from "../../public/images/projectPicks/promptopia.webp";
 
 const Portfolio = () => {
   return (
@@ -18,7 +18,7 @@ const Portfolio = () => {
           <div className="text-center pt-3">
             <h2 className="text-xl">Social Media</h2>
           </div>
-          <div className=" lg:flex w-full lg:w-[100%] lg:gap-3 lg:h-[90%] h-[100%] p-3 ">
+          <div className=" lg:flex w-full h-full p-3 lg:w-[100%] lg:h-[90%] lg:gap-3">
             <div>
               <Image
                 className="w-full border-indigo-900 border-2"
@@ -106,7 +106,7 @@ const Portfolio = () => {
                   <div className="flex justify-evenly w-full space-x-10">
                     <a
                       className="w-full text-center"
-                      href="https://toolkit-cart.web.app/"
+                      href="https://promptje.vercel.app/"
                       target="_blank"
                     >
                       <button className="w-[100%] h-8 text-center rounded-xl p-1 text-sm bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-400">
@@ -115,7 +115,7 @@ const Portfolio = () => {
                     </a>
                     <a
                       className="w-full text-center"
-                      href="https://github.com/JhonEverson979/reduxToolkit-cart"
+                      href="https://github.com/JhonEverson979/Next-promptopia"
                       target="_blank"
                     >
                       <button className="w-[100%] h-8 text-center p-1 text-sm rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-400">

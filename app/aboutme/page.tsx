@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import mePick from "../../public/images/mePick/mePick.jpeg";
+import mePick from "../../public/images/mePick/mePick.webp";
 
 const AboutMe = () => {
   return (

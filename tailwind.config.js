@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        "hero-pattern": 'url("/images/bgPick/background2.jpg")',
+        "hero-pattern": 'url("/images/bgPick/background2.webp")',
       },
       keyframes: {
         moveDown: {
