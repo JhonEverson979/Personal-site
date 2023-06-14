@@ -70,7 +70,7 @@ const Navbar = () => {
 
         <div ref={topbarRef} className="lg:hidden">
           <button
-            name="nav button"
+            aria-label="nav button"
             onClick={handleClick}
             className="scale-100 hover:scale-110 text-xl"
           >
@@ -135,8 +135,8 @@ const Navbar = () => {
                 </ul>
               </div>
               <div className="sm:w-[20%] w-[30%]">
+                <h2 className=" text-lg">Contacts: </h2>
                 <ul className="flex flex-col gap-4 text-lg">
-                  <h2 className=" text-lg">Contacts: </h2>
                   <li className="hover:bg-slate-900">
                     <Link
                       target="_blank"
