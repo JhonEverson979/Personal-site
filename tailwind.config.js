@@ -40,28 +40,13 @@ module.exports = {
             backgroundPosition: "1200px",
           },
         },
-
-        // @keyframes animate {
-        //   0%, 10%{
-        //     background-position: -1000px;
-        //   }
-        //   10%{
-        //     background-position: top left;
-        //   }
-        //   98% {
-        //     background-position: top right;
-        //   }
-
-        //   100%{
-        //     background-position: 1200px;
-        //   }
-        // }
       },
       animation: {
         moveDown: "moveDown 1.2s ease",
         fadeAway: "fadeAway 2.2s ease-out",
         moveUp: "moveUp 1.5s linear",
         lloop: "lloop 4s infinite",
+        "spin-slow": "pulse 10s linear infinite",
       },
       backgroundSize: {
         150: "150px",

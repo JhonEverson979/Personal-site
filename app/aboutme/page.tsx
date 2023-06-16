@@ -4,7 +4,7 @@ import mePick from "../../public/images/mePick/mePick.webp";
 
 const AboutMe = () => {
   return (
-    <div className="w-full mt-16 md:h-[80vh] flex justify-center items-center text-white">
+    <div className="w-full pt-16 md:h-[89vh] flex justify-center items-center text-white">
       <div className=" w-[80%] m-auto flex flex-col-reverse md:flex-row sm:justify-between sm:items-center">
         <div className=" md:max-w-[70%] lg:max-w-[50%] space-y-1 lg:space-y-3">
           <div className="w-full rounded-xl ">

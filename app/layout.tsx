@@ -1,13 +1,11 @@
 "use client";
-
+import earth from "../public/images/planets/earth.png";
 import "./globals.css";
-import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar/navbar";
 import { useEffect, useState } from "react";
 import StartPage from "@/components/StartPage/startpage";
 import Footer from "@/components/Footer/footer";
-
-const inter = Inter({ subsets: ["latin"] });
+import Image from "next/image";
 
 export default function RootLayout({
   children,
@@ -31,7 +29,20 @@ export default function RootLayout({
         ) : (
           <>
             <Navbar />
-            <main>{children}</main>
+            <main>
+              <div className="opacity-60 -z-10 absolute right-0">
+                <Image
+                  className=""
+                  alt="planet"
+                  priority
+                  width={300}
+                  height={300}
+                  src={earth}
+                />
+              </div>
+              {children}{" "}
+            </main>
+
             <Footer />
           </>
         )}

@@ -1,7 +1,10 @@
 import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHeart,
+  faEnvelopeSquare,
+  faMugHot,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 
 import Link from "next/link";
 
@@ -14,9 +17,16 @@ const Footer = () => {
     >
       <div className="flex justify-center lg:justify-between items-center h-full w-[70%] m-auto">
         <div className="flex">
-          <h1 className="text-sm md:text-base text-iron">
-            developed with lots of love and coffee
-          </h1>
+          <p className="text-sm md:text-base flex gap-2">
+            <span>developed with lots of</span>
+            <span>
+              <FontAwesomeIcon icon={faHeart} />
+            </span>
+            <span>and</span>
+            <span>
+              <FontAwesomeIcon icon={faMugHot} />
+            </span>
+          </p>
         </div>
         <div className="hidden lg:flex">
           <ul className="flex gap-4 text-lg">

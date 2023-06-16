@@ -35,7 +35,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="w-full h-14 bg-slate-950 backdrop-filter backdrop-blur-sm text-white"
+      className="w-full z-50 h-14 fixed bg-slate-950 backdrop-filter backdrop-blur-sm text-white"
       aria-label="Main navigation"
     >
       <div className="flex justify-between items-center h-full w-[70%] m-auto">
@@ -55,7 +55,7 @@ const Navbar = () => {
             ].map((link) => (
               <li
                 key={link.name}
-                className="scale-100 group-hover:scale-110 text-iron"
+                className="scale-100 group-hover:scale-110 text-iron hover:text-slate-200"
               >
                 <Link
                   href={link.path}
@@ -86,7 +86,7 @@ const Navbar = () => {
             } bg-slate-950 mt-2 backdrop-filter backdrop-blur-sm absolute m-auto left-0 right-0 w-[100%] z-10 transition-height duration-500 ease-in-out overflow-hidden`}
           >
             <div className="flex justify-center mt-4 gap-16">
-              <div className="sm:w-[20%] w-[30%]">
+              <div className="sm:w-[20%] space-y-2 w-[30%]">
                 <h2 className=" text-lg text-center">Navigation:</h2>
                 <ul className="flex flex-col gap-2 text-lg ">
                   <li
@@ -134,7 +134,7 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
-              <div className="sm:w-[20%] w-[30%]">
+              <div className="sm:w-[20%] space-y-2 w-[30%]">
                 <h2 className=" text-lg">Contacts: </h2>
                 <ul className="flex flex-col gap-4 text-lg">
                   <li className="hover:bg-slate-900">

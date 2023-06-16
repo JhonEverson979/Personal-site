@@ -56,9 +56,10 @@ const Page = () => {
   const [isLoading, setIsLoading] = useState(false);
   const loading = () => {
     setIsLoading(true);
+    alert("thanks for message, let me know you are not a robot and your message will be sent :).")
   };
   return (
-    <main className="w-full my-24 text-white">
+    <main className="w-full h-[89vh] pt-24  text-white">
       <div className="h-full flex justify-center items-center">
         <div className=" w-[70%] md:w-[50%] lg:w-[40%]">
           <div>
