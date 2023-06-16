@@ -34,17 +34,26 @@ const Footer = () => {
               <Link
                 target="_blank"
                 href="https://www.linkedin.com/in/jhon-everson-30409725b/"
+                aria-label="footer link"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="w-5 h-5" />
               </Link>
             </li>
             <li className="scale-100 hover:scale-110">
-              <Link target="_blank" href="https://github.com/JhonEverson979">
+              <Link
+                target="_blank"
+                href="https://github.com/JhonEverson979"
+                aria-label="footer link"
+              >
                 <FontAwesomeIcon icon={faGithubSquare} className="w-6 h-6" />
               </Link>
             </li>
             <li className="scale-100 hover:scale-110">
-              <Link target="_blank" href="mailto:jhoneverson979@gmail.com">
+              <Link
+                target="_blank"
+                href="mailto:jhoneverson979@gmail.com"
+                aria-label="footer link"
+              >
                 <FontAwesomeIcon icon={faEnvelopeSquare} className="w-6 h-6" />
               </Link>
             </li>

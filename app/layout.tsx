@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import StartPage from "@/components/StartPage/startpage";
 import Footer from "@/components/Footer/footer";
 import Image from "next/image";
+import Head from "next/head";
 
 export default function RootLayout({
   children,
@@ -22,7 +23,15 @@ export default function RootLayout({
 
   return (
     <html className="bg-hero-pattern  font-serif" lang="en">
-      <title>jhon everson</title>
+      <Head>
+        <title>Jhon Everson</title>
+        <meta
+          name="personal website"
+          content="personal website jhon everson"
+          key="desc"
+        />
+      </Head>
+
       <body>
         {saber ? (
           <StartPage />
@@ -30,13 +39,21 @@ export default function RootLayout({
           <>
             <Navbar />
             <main>
-              <div className="opacity-60 -z-10 absolute right-0">
+              <div className=" opacity-60 -z-10 absolute right-0">
                 <Image
-                  className=""
+                  className="hidden md:flex"
                   alt="planet"
                   priority
                   width={300}
                   height={300}
+                  src={earth}
+                />
+                <Image
+                  className="md:hidden"
+                  alt="planet"
+                  priority
+                  width={200}
+                  height={200}
                   src={earth}
                 />
               </div>

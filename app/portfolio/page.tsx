@@ -39,7 +39,7 @@ const Portfolio = () => {
                   </div>
                 </div>
 
-                <div className=" w-40 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
+                <div className=" w-40 md:w-64 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
                   <div className=" h-[250px] w-[250px] bg-cover bg-[url('/images/projectPicks/mobile.png')] bg-center flex items-center justify-center">
                     <Image
                       width={100}
@@ -53,9 +53,9 @@ const Portfolio = () => {
                 </div>
               </div>
               <Image
-                className="border-indigo-900 border-2 sm:hidden"
-                width={1400}
-                height={1400}
+                className="border-indigo-900 border-2 sm:hidden object-cover"
+                width={430}
+                height={430}
                 priority
                 src={socialMediaPick}
                 alt=""
@@ -145,7 +145,7 @@ const Portfolio = () => {
                   </div>
                 </div>
 
-                <div className=" w-40 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
+                <div className=" w-40 md:w-64 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
                   <div className=" h-[250px] w-[250px] bg-cover bg-[url('/images/projectPicks/mobile.png')] bg-center flex items-center justify-center">
                     <Image
                       width={100}
@@ -159,8 +159,8 @@ const Portfolio = () => {
                 </div>
               </div>
               <Image
-                width={1400}
-                height={1400}
+                width={430}
+                height={430}
                 className="w-full border-indigo-900 border-2 sm:hidden"
                 priority
                 src={PromptopiaPick}
@@ -251,7 +251,7 @@ const Portfolio = () => {
                   </div>
                 </div>
 
-                <div className=" w-40 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
+                <div className=" w-40 md:w-64 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
                   <div className=" h-[250px] w-[250px] bg-cover bg-[url('/images/projectPicks/mobile.png')] bg-center flex items-center justify-center">
                     <Image
                       width={100}
@@ -265,8 +265,8 @@ const Portfolio = () => {
                 </div>
               </div>
               <Image
-                width={1400}
-                height={1400}
+                width={430}
+                height={430}
                 className="w-full border-indigo-900 border-2 sm:hidden"
                 priority
                 src={memoryPick}
@@ -365,7 +365,7 @@ const Portfolio = () => {
                   </div>
                 </div>
 
-                <div className=" w-40 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
+                <div className=" w-40 md:w-64 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
                   <div className=" h-[250px] w-[250px] bg-cover bg-[url('/images/projectPicks/mobile.png')] bg-center flex items-center justify-center">
                     <Image
                       width={100}
@@ -379,8 +379,8 @@ const Portfolio = () => {
                 </div>
               </div>
               <Image
-                width={1400}
-                height={1400}
+                width={430}
+                height={430}
                 className="w-full border-indigo-900 border-2 sm:hidden"
                 priority
                 src={studentPick}
@@ -474,7 +474,7 @@ const Portfolio = () => {
                   </div>
                 </div>
 
-                <div className=" w-40 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
+                <div className=" w-40 md:w-64 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
                   <div className=" h-[250px] w-[250px] bg-cover bg-[url('/images/projectPicks/mobile.png')] bg-center flex items-center justify-center">
                     <Image
                       width={100}
@@ -488,8 +488,8 @@ const Portfolio = () => {
                 </div>
               </div>
               <Image
-                width={1400}
-                height={1400}
+                width={430}
+                height={430}
                 className="w-full border-indigo-900 border-2 sm:hidden"
                 priority
                 src={cartPick}
