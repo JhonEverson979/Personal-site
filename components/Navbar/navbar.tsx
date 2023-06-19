@@ -5,6 +5,7 @@ import {
   faEnvelopeSquare,
   faBars,
   faXmark,
+  faFile,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
@@ -88,7 +89,7 @@ const Navbar = () => {
             <div className="flex justify-center mt-4 gap-16">
               <div className="sm:w-[20%] space-y-2 w-[30%]">
                 <h2 className=" text-lg text-center">Navigation:</h2>
-                <ul className="flex flex-col gap-2 text-lg ">
+                <ul className="flex flex-col gap-4 text-lg ">
                   <li
                     className={`scale-100 hover:scale-110 pl-2 text-center  ${
                       pathname === "/" ? "border-b scale-110" : "border-none"
@@ -171,6 +172,16 @@ const Navbar = () => {
                         icon={faEnvelopeSquare}
                       />
                       Email
+                    </Link>
+                  </li>
+                  <li className="hover:bg-slate-900">
+                    <Link
+                      target="_blank"
+                      href={"/resume/jhon-everson-resume.pdf"}
+                      aria-label="resume link"
+                    >
+                      <FontAwesomeIcon icon={faFile} className=" mr-2" />
+                      Resume
                     </Link>
                   </li>
                 </ul>

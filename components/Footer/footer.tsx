@@ -3,6 +3,7 @@ import {
   faHeart,
   faEnvelopeSquare,
   faMugHot,
+  faFile,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -55,6 +56,15 @@ const Footer = () => {
                 aria-label="footer link"
               >
                 <FontAwesomeIcon icon={faEnvelopeSquare} className="w-6 h-6" />
+              </Link>
+            </li>
+            <li className="scale-100 hover:scale-110">
+              <Link
+                target="_blank"
+                href={"/resume/jhon-everson-resume.pdf"}
+                aria-label="footer link"
+              >
+                <FontAwesomeIcon icon={faFile} className=" w-[22px] h-[22px]" />
               </Link>
             </li>
           </ul>
