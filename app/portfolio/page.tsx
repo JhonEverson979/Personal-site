@@ -5,11 +5,13 @@ import cartPick from "../../public/images/projectPicks/redux-cart.webp";
 import memoryPick from "../../public/images/projectPicks/memory-game-photo.webp";
 import studentPick from "../../public/images/projectPicks/students-grade-photo.webp";
 import PromptopiaPick from "../../public/images/projectPicks/promptopia.webp";
+import keelWorksPick from "../../public/images/projectPicks/keelworks.webp";
 import mbSocialMedia from "../../public/images/projectPicks/mb-social-media.webp";
 import mbPrompt from "../../public/images/projectPicks/mb-prompt.webp";
 import mbMemoryGame from "../../public/images/projectPicks/mb-memoryGame.webp";
 import mbStudents from "../../public/images/projectPicks/mb-students.webp";
 import mbToolkit from "../../public/images/projectPicks/mb-toolkit.webp";
+import mbKeelWorks from "../../public/images/projectPicks/mb-Keelworks.webp";
 
 const Portfolio = () => {
   return (
@@ -17,6 +19,104 @@ const Portfolio = () => {
       <div className=" space-y-5">
         <div className=" h-full mb-10 flex justify-center items-center">
           <h1 className=" text-4xl">PORTFOLIO</h1>
+        </div>
+
+        <div className="w-full h-full gap-16 rounded-md border-2 border-indigo-900">
+          <div className="text-center pt-3">
+            <h2 className="text-xl">KeelWorks Fundation</h2>
+          </div>
+          <div className=" lg:flex w-full lg:w-[100%] lg:gap-3 lg:h-[90%] h-[100%] p-3 ">
+            <div>
+              <div className="hidden sm:flex justify-evenly items-center ">
+                <div className="w-full h-full flex justify-center items-center">
+                  <div className="h-[300px] w-[351px] bg-cover bg-[url('/images/projectPicks/computer.png')] bg-center flex items-center justify-center">
+                    <Image
+                      className=" -translate-y-12 rounded-sm h-[145px] mr-1 border-slate-600 border-2"
+                      width={270}
+                      height={270}
+                      priority
+                      src={keelWorksPick}
+                      alt=""
+                    />
+                  </div>
+                </div>
+
+                <div className=" w-40 md:w-64 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
+                  <div className=" h-[250px] w-[250px] bg-cover bg-[url('/images/projectPicks/mobile.png')] bg-center flex items-center justify-center">
+                    <Image
+                      width={100}
+                      height={100}
+                      priority
+                      className=" h-52 mb-3 rounded-lg"
+                      src={mbKeelWorks}
+                      alt="robert pick"
+                    />
+                  </div>
+                </div>
+              </div>
+              <Image
+                width={430}
+                height={430}
+                className="w-full border-indigo-900 border-2 sm:hidden"
+                priority
+                src={keelWorksPick}
+                alt=""
+              />
+              <div className="flex justify-center lg:justify-normal max-w-full p-3 gap-3">
+                <div className=" w-full">
+                  <div className="flex justify-evenly w-full space-x-10">
+                    <a
+                      className="w-full text-center"
+                      href="https://keelworks.org/"
+                      target="_blank"
+                    >
+                      <button className="w-[50%] h-8 text-center rounded-xl p-1 text-sm bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-400">
+                        Website
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className=" lg:w-[120%] space-y-3">
+              <div className=" xl:space-y-2">
+                <p className="">description:</p>
+                <p className="text-sm lg:text-xs xl:text-sm ">
+                  Keelworks is a project that helps people learn and grow.
+                  Keelworks teaches skills in many areas such as programming,
+                  design, business, arts and others. Keelworks also encourages
+                  inclusion, diversity, leadership and community. Keelworks is a
+                  movement that wants to change the world through education.
+                </p>
+              </div>
+              <div className="xl:space-y-2">
+                <div>
+                  <p>made with:</p>
+                </div>
+                <div>
+                  <div className="flex flex-wrap">
+                    <div className="flex items-center gap-3 md:w-[40%] w-[50%]">
+                      <div className="rounded-full h-3 w-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                      <p className="text-sm">React</p>
+                    </div>
+                    <div className="flex items-center gap-3 md:w-[40%] w-[50%]">
+                      <div className="rounded-full h-3 w-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                      <p className="text-sm">Redux</p>
+                    </div>
+                    <div className="flex items-center gap-3 md:w-[40%] w-[50%]">
+                      <div className="rounded-full h-3 w-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                      <p className="text-sm">Javascript</p>
+                    </div>
+                    <div className="flex items-center gap-3 md:w-[40%] w-[50%]">
+                      <div className="rounded-full h-3 w-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
+                      <p className="text-sm">Tailwind</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="w-full h-full gap-16 rounded-md border-2 border-indigo-900">
@@ -439,113 +539,6 @@ const Portfolio = () => {
                     <div className="flex items-center gap-3 md:w-[40%] w-[50%]">
                       <div className="rounded-full h-3 w-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
                       <p className="text-sm">HTML</p>
-                    </div>
-                    <div className="flex items-center gap-3 md:w-[40%] w-[50%]">
-                      <div className="rounded-full h-3 w-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
-                      <p className="text-sm">CSS</p>
-                    </div>
-                    <div className="flex items-center gap-3 md:w-[40%] w-[50%]">
-                      <div className="rounded-full h-3 w-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
-                      <p className="text-sm">host: Firebase</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="w-full h-full gap-16 rounded-md border-2 border-indigo-900">
-          <div className="text-center pt-3">
-            <h2 className="text-xl">ReduxToolkit cart</h2>
-          </div>
-          <div className=" lg:flex w-full lg:w-[100%] lg:gap-3 lg:h-[90%] h-[100%] p-3 ">
-            <div>
-              <div className="hidden sm:flex justify-evenly items-center ">
-                <div className="w-full h-full flex justify-center items-center">
-                  <div className="h-[300px] w-[351px] bg-cover bg-[url('/images/projectPicks/computer.png')] bg-center flex items-center justify-center">
-                    <Image
-                      className=" -translate-y-12 rounded-sm h-[145px] mr-1 border-slate-600 border-2"
-                      width={270}
-                      height={270}
-                      priority
-                      src={cartPick}
-                      alt=""
-                    />
-                  </div>
-                </div>
-
-                <div className=" w-40 md:w-64 h-full flex justify-center items-center -translate-x-4 md:-translate-x-0">
-                  <div className=" h-[250px] w-[250px] bg-cover bg-[url('/images/projectPicks/mobile.png')] bg-center flex items-center justify-center">
-                    <Image
-                      width={100}
-                      height={100}
-                      priority
-                      className=" h-52 mb-3 rounded-lg"
-                      src={mbToolkit}
-                      alt="robert pick"
-                    />
-                  </div>
-                </div>
-              </div>
-              <Image
-                width={430}
-                height={430}
-                className="w-full border-indigo-900 border-2 sm:hidden"
-                priority
-                src={cartPick}
-                alt=""
-              />
-              <div className="flex justify-center lg:justify-normal max-w-full p-3 gap-3">
-                <div className=" w-full">
-                  <div className="flex justify-evenly w-full space-x-10">
-                    <a
-                      className="w-full text-center"
-                      href="https://toolkit-cart.web.app/"
-                      target="_blank"
-                    >
-                      <button className="w-[100%] h-8 text-center rounded-xl p-1 text-sm bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-400">
-                        Website
-                      </button>
-                    </a>
-                    <a
-                      className="w-full text-center"
-                      href="https://github.com/JhonEverson979/reduxToolkit-cart"
-                      target="_blank"
-                    >
-                      <button className="w-[100%] h-8 text-center p-1 text-sm rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-400">
-                        Repository
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className=" lg:w-[120%] space-y-3">
-              <div className=" xl:space-y-2">
-                <p className="">description:</p>
-                <p className="text-sm lg:text-xs xl:text-sm ">
-                  shopping cart. this project I totally used to improve my
-                  skills with redux-toolkit.
-                </p>
-              </div>
-              <div className="xl:space-y-2">
-                <div>
-                  <p>made with:</p>
-                </div>
-                <div>
-                  <div className="flex flex-wrap">
-                    <div className="flex items-center gap-3 md:w-[40%] w-[50%]">
-                      <div className="rounded-full h-3 w-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
-                      <p className="text-sm">React</p>
-                    </div>
-                    <div className="flex items-center gap-3 md:w-[40%] w-[50%]">
-                      <div className="rounded-full h-3 w-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
-                      <p className="text-sm">Redux</p>
-                    </div>
-                    <div className="flex items-center gap-3 md:w-[40%] w-[50%]">
-                      <div className="rounded-full h-3 w-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
-                      <p className="text-sm">Javascript</p>
                     </div>
                     <div className="flex items-center gap-3 md:w-[40%] w-[50%]">
                       <div className="rounded-full h-3 w-3 bg-gradient-to-r from-purple-500 to-pink-500"></div>
