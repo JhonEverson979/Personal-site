@@ -4,13 +4,12 @@ import socialMediaPick from "../../public/images/projectPicks/socialproject2.web
 import memoryPick from "../../public/images/projectPicks/memory-game-photo.webp";
 import studentPick from "../../public/images/projectPicks/students-grade-photo.webp";
 import PromptopiaPick from "../../public/images/projectPicks/promptopia.webp";
-import keelWorksPick from "../../public/images/projectPicks/keelworks.webp";
+import keelWorksPick from "../../public/images/projectPicks/kw.webp";
 import mbSocialMedia from "../../public/images/projectPicks/mb-social-media.webp";
 import mbPrompt from "../../public/images/projectPicks/mb-prompt.webp";
 import mbMemoryGame from "../../public/images/projectPicks/mb-memoryGame.webp";
 import mbStudents from "../../public/images/projectPicks/mb-students.webp";
 import mbKeelWorks from "../../public/images/projectPicks/mb-keelworks.webp";
-
 const Portfolio = () => {
   return (
     <div className="h-full w-[70%] pt-24 m-auto text-white ">
