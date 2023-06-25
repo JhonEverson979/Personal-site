@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import socialMediaPick from "../../public/images/projectPicks/socialproject2.webp";
-import cartPick from "../../public/images/projectPicks/redux-cart.webp";
 import memoryPick from "../../public/images/projectPicks/memory-game-photo.webp";
 import studentPick from "../../public/images/projectPicks/students-grade-photo.webp";
 import PromptopiaPick from "../../public/images/projectPicks/promptopia.webp";
@@ -10,8 +9,7 @@ import mbSocialMedia from "../../public/images/projectPicks/mb-social-media.webp
 import mbPrompt from "../../public/images/projectPicks/mb-prompt.webp";
 import mbMemoryGame from "../../public/images/projectPicks/mb-memoryGame.webp";
 import mbStudents from "../../public/images/projectPicks/mb-students.webp";
-import mbToolkit from "../../public/images/projectPicks/mb-toolkit.webp";
-import mbKeelWorks from "../../public/images/projectPicks/mb-Keelworks.webp";
+import mbKeelWorks from "../../public/images/projectPicks/mb-keelworks.webp";
 
 const Portfolio = () => {
   return (
