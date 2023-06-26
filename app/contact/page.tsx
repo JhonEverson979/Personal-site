@@ -56,7 +56,9 @@ const Page = () => {
   const [isLoading, setIsLoading] = useState(false);
   const loading = () => {
     setIsLoading(true);
-    alert("thanks for message, let me know you are not a robot and your message will be sent :).")
+    alert(
+      "thanks for message, let me know you are not a robot and your message will be sent :)."
+    );
   };
   return (
     <main className="w-full h-[89vh] pt-24  text-white">
